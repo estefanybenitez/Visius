@@ -19,16 +19,11 @@ return new class extends Migration
             $table->date('fecha_nacimiento');
             $table->date('fecha_ingreso');
             $table->string('direccion', 150);
-            //crear llaves foraneas
-            $table->bigInteger('id_usuario')->unsigned();
+
             $table->bigInteger('id_rol')->unsigned();
             $table->bigInteger('id_area')->unsigned();
+            
             //llamar llaves
-            //fk tabla usuario
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuario')
-            ->onDelete('cascade')
-            ->onUpdate('cascade');
-            //fk tabla roles
             $table->foreign('id_rol')->references('id_rol')->on('roles')
             ->onDelete('cascade')
             ->onUpdate('cascade');

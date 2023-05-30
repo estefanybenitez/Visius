@@ -1,4 +1,8 @@
 <!doctype html>
+
+
+{{-- plantilla principal --}}
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -7,14 +11,25 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Visius') }}</title>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    {{-- <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
+    
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <!-- Bootstrap icons(copiado de visius )-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/minfo.css">
+    <link rel="shortcut icon" href="../imgs/iconempleados.ico">
+ <!-- Fin Bootstrap icons-->
+ 
 </head>
 <body>
     <div id="app">
@@ -78,3 +93,4 @@
     </div>
 </body>
 </html>
+
