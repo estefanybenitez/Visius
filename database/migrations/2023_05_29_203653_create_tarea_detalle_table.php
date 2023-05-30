@@ -26,7 +26,7 @@ return new class extends Migration
             ->onDelete('cascade')
             ->onUpdate('cascade');
             // fk tabla empleados
-            $table->foreign('id_empleados')->references('id_empleados')->on('empleados')
+            $table->foreign('id_empleado')->references('id_empleado')->on('empleados')
             ->onDelete('cascade')
             ->onUpdate('cascade');
             //fk tabla tareas
