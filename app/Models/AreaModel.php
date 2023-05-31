@@ -10,11 +10,11 @@ class AreaModel extends Model
     use HasFactory;
     
     //Nombre de la tabla
-    protected $table = 'productos';
+    protected $table = 'area';
 
     //Llave primaria
-    protected $primaryKey = 'codigo';
+    protected $primaryKey = 'id_area';
 
     //Campos de asignacion o campos de mi tabla
-    protected $fillable = ['nombre', 'precio', 'marca'];
+    protected $fillable = ['nombre_area'];
 }
