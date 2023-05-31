@@ -14,7 +14,7 @@ class RolesSeeder extends Seeder
     public function run(): void
     {
         $data = array([
-            'nombre_rol' => 'Administrador',
+            'nombre_rol' => 'administrador',
             'created_at' =>Carbon::now()
         ]);
         

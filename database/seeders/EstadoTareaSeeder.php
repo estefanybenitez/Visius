@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class EstadoTareaSeeder extends Seeder
 {
@@ -12,6 +13,9 @@ class EstadoTareaSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $data = array([
+            'estado' => 'Asignada',
+            'created_at' =>Carbon::now()
+        ]);
     }
 }
