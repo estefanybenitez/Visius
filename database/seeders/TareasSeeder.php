@@ -19,6 +19,8 @@ class TareasSeeder extends Seeder
             'descripcion'=>'de nuevos empleados',
             'created_at'=>Carbon::now()
         ]);
+        DB::table('tareas')->insert($data);
 
     }
 }
+

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class EmpleadosSeeder extends Seeder
@@ -21,12 +22,15 @@ class EmpleadosSeeder extends Seeder
             'fecha_ingreso' => '2023-09-10',
             'direccion' => 'calle principal',
             'id_rol' => '1',
-            'id_are' => '1',
+            'id_area' => '1',
 
 
 
 
             'created_at' =>Carbon::now()
         ]);
+        DB::table('empleados')->insert($data);
+
+
     }
 }

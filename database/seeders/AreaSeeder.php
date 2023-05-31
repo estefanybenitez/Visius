@@ -18,5 +18,7 @@ class AreaSeeder extends Seeder
             'nombre_area' => 'departamento1',
             'created_at' =>Carbon::now()
         ]);
+            //Insert data into table
+            DB::table('area')->insert($data);
     }
 }

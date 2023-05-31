@@ -23,5 +23,8 @@ class DetalleTareaSeeder extends Seeder
             'id_estado' => '1',
             'created_at' =>Carbon::now()
         ]);
+
+            //Insert data into table
+            DB::table('tarea_detalle')->insert($data);
     }
 }

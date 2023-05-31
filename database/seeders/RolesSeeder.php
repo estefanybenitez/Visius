@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 use Carbon\Carbon;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class RolesSeeder extends Seeder
 {
@@ -17,6 +18,7 @@ class RolesSeeder extends Seeder
             'nombre_rol' => 'administrador',
             'created_at' =>Carbon::now()
         ]);
-        
+        DB::table('roles')->insert($data);
+
     }
 }
